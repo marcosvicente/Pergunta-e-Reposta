@@ -1,0 +1,24 @@
+.question{
+    text-align: center;
+}
+
+ input{
+
+	border-collapse: separate;
+	border-spacing: 5px;
+	border: 1px solid #000;
+	background-color: white;
+	width: 150px;
+	height: 100px;
+	font-size: 20px;
+	font-family: Tahoma;
+	text-align: center;
+	margin: 0 50px;
+
+}
+#superior{
+	display: none;
+}
+#inferior{
+	display: none;
+}

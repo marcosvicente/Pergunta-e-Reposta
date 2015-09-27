@@ -1,4 +1,4 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -11,46 +11,112 @@
 
     </head>
     <body>
-        <div class="icon-bar vertical five-up">
-            <a class="item">
-                <img src="imagem/history.png" >
-                <label>Historia</label>
-            </a>
+        <div class="menu">
+            <div class="icon-bar horisontal five-up" id="box-toggle">
+                <a class="item" href="#history">
+                    <img src="imagem/history.png" >
+                    <label >Historia</label>
+                </a>
 
-            <a class="item">
-                <img src="imagem/chemistry.png">
-                <label>Quimica</label>
-            </a>
+                <a class="item" href="#chemistry" >
+                    <img src="imagem/chemistry.png">
+                    <label>Quimica</label>
+                </a>
 
-            <a class="item">
-                <img src="imagem/portuguese.png">
-                <label>Postuguês</label>
-            </a>
+                <a class="item" href="#portuguese">
+                    <img src="imagem/portuguese.png">
+                    <label>Postuguês</label>
+                </a>
 
-            <a  class="item">
-                <img src="imagem/math.svg">
-                <label>Matematica</label>
-            </a>
+                <a  class="item" href="#math">
+                    <img src="imagem/math.svg">
+                    <label>Matematica</label>
+                </a>
+            </div>
+        </div>
+
+        <div  id="superior" class="acertou">
+            <img src="imagem/acertou.jpg">
+        </div>
+
+        <div  id="inferior" class="errou">
+            <img src="imagem/errou.jpg">
+
+        </div>
+
+        <div class="question">
+            <div class="question-history" id="history">
+                <h2>Quem descobriu a Ámerica?</h2>
+
+                <input type="button"  value="Bill Gates" onclick="btnerrou()">
+                <input type="button"  value="Papai Noel" onclick="btnerrou()">
+                <input type="button"  value="Senhor Madruga" onclick="btnerrou()">
+                <input type="button"  value="Cristovan Colombo" onclick="btnacertou()">
+
+
+
+            <div class="question-chemistry" id="chemistry">
+                <h2>O que é um Matéria?</h2>
+                <input type="button"  value="Marido da Materio" onclick="btnerrou()">
+                <input type="button"  value="Um cachorro" onclick="btnerrou()">
+                <input type="button"  value="Amontoado de Átomos" onclick="btnacertou()">
+                <input type="button"  value="O Neymar" onclick="btnerrou()">
+            </div>
+
+
+            <div class="question-portuguese" id="portuguese">
+                <h2>Quem foi Monteiro Lobato?</h2>
+                <input type="button"  value="Um marinheiro" onclick="btnerrou()">
+                <input type="button"  value="Padre" onclick="btnerrou()">
+                <input type="button"  value="Cantor" onclick="btnerrou()">
+                <input type="button"  value="Escritor" onclick="btnacertou()">
+            </div>
+
+
+            <div class="question-math" id="math">
+                <h2>Qual é o valor de pi?</h2>
+                <input type="button"  value="0" onclick="btnerrou()">
+                <input type="button"  value="3.14" onclick="btnacertou()">
+                <input type="button"  value="-20" onclick="btnerrou()">
+                <input type="button"  value="700" onclick="btnerrou()">
+            </div>
 
         </div>
 
 
-      <script src="js/vendor/jquerry.js"></script>
-      <script src="js/foundation/foundation.js"></script>
-      <script src="js/foundation/foundation.alerts.js"></script>
-      <script src="js/foundation/foundation.clearing.js"></script>
-      <script src="js/foundation/foundation.cookie.js"></script>
-      <script src="js/foundation/foundation.dropdown.js"></script>
-      <script src="js/foundation/foundation.forms.js"></script>
-      <script src="js/foundation/foundation.joyride.js"></script>
-      <script src="js/foundation/foundation.magellan.js"></script>
-      <script src="js/foundation/foundation.orbit.js"></script>
-      <script src="js/foundation/foundation.placeholder.js"></script>
-      <script src="js/foundation/foundation.reveal.js"></script>
-      <script src="js/foundation/foundation.section.js"></script>
-      <script src="js/foundation/foundation.tooltips.js"></script>
-      <script src="js/foundation/foundation.topbar.js"></script>
-      <script src="js/foundation/foundation.interchange.js"></script>
+
+
+        <script>
+            function btnacertou(){
+            	//Deixando Elemento com ID Inferior Visivel
+            	$("#inferior").fadeOut("slow");
+            	//Deixando Elemento com ID Superior Visivel
+            	$("#superior").fadeIn("slow");
+            }
+            function btnerrou(){
+            	//Deixando Elemento com ID Inferior Visivel
+            	$("#inferior").fadeIn("slow");
+            	//Deixando Elemento com ID Superior Visivel
+            	$("#superior").fadeOut("slow");
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="js/vendor/jquerry.js"></script>
+        <script src="js/foundation/foundation.js"></script>
+        <script src="js/foundation/foundation.alerts.js"></script>
+        <script src="js/foundation/foundation.clearing.js"></script>
+        <script src="js/foundation/foundation.cookie.js"></script>
+        <script src="js/foundation/foundation.dropdown.js"></script>
+        <script src="js/foundation/foundation.forms.js"></script>
+        <script src="js/foundation/foundation.joyride.js"></script>
+        <script src="js/foundation/foundation.magellan.js"></script>
+        <script src="js/foundation/foundation.orbit.js"></script>
+        <script src="js/foundation/foundation.placeholder.js"></script>
+        <script src="js/foundation/foundation.reveal.js"></script>
+        <script src="js/foundation/foundation.section.js"></script>
+        <script src="js/foundation/foundation.tooltips.js"></script>
+        <script src="js/foundation/foundation.topbar.js"></script>
+        <script src="js/foundation/foundation.interchange.js"></script>
 
     </body>
 
